@@ -40,7 +40,6 @@ const Form = () => {
   const { control, handleSubmit, watch } = useForm<TForm>();
 
   const onSubmit: SubmitHandler<TForm> = (data) => {
-    console.log(data);
     switch (data.type) {
       case "pizza":
         setData({
